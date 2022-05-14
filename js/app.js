@@ -8,11 +8,11 @@
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // // // Write your code here
-function sum(a, b) { //eslint-disable-line
-  let mySum = a + b;
-  let myStr = `The sum of ${a} and ${b} is ${mySum}.`;
-  return [mySum, myStr];
-}
+// function sum(a, b) { //eslint-disable-line
+//   let mySum = a + b;
+//   let myStr = `The sum of ${a} and ${b} is ${mySum}.`;
+//   return [mySum, myStr];
+// }
 
 // // // Here is the test for sum(); uncomment it to run it
 // // //testSum(4, 7);
@@ -35,7 +35,7 @@ function multiply(a, b) { //eslint-disable-line
   return [myProduct, myStrTwo];
 }
 // //   // // Here is the test for multiply(); uncomment it to run it
-// //   testMultiply(5, 9);
+testMultiply(5, 9);
 
 // // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -78,18 +78,18 @@ function multiply(a, b) { //eslint-disable-line
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
+// let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(array) { 
-  let sumFive = sum(array[0], sum(array[1], array[2])[0])[0];
-  let StrFive = `${array} was passed in as an array of numbers, and ${sumFive} is their sum.`;
+// function sumArray(array) { 
+//   let sumFive = sum(array[0], sum(array[1], array[2])[0])[0];
+//   let StrFive = `${array} was passed in as an array of numbers, and ${sumFive} is their sum.`;
 
-return [sumFive, StrFive];
-}
+// return [sumFive, StrFive];
+// }
 
-// // Here is the test for sumArray(); uncomment it to run it
+// // // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -104,12 +104,18 @@ testSumArray(testArray);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // // Write your code here
-// function multiplyArray(multArr) { //eslint-disable-line
+let testArray = [2, 3, 4];
 
-// }
+function multiplyArray(multArr) { //eslint-disable-line
+  let productSix = multiply(multArr[0], multiply(multArr[1], multArr[2])[0])[0];
+  let strSix = `The numbers ${multArr} have a product of ${strSix}.`;
+
+return [productSix, strSix];
+}
+
 
 // // Here is the test for multiplyArray(); uncomment it to run it
-// // testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
